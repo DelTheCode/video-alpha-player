@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"typeRoots": [
+			"node_modules/@types"
+		],
+		"outDir": "dist",
+		"strict": true,
+		"jsx": "preserve",
+		"jsxFactory": "h",
+		"declaration": true,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"strictFunctionTypes": false,
+		"sourceMap": false,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"module": "es6",
+		"target": "es5",
+		"removeComments": true,
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"lib": [
+			"esnext",
+			"dom",
+			"dom.iterable",
+			"scripthost",
+			"ES2015"
+		],
+		"baseUrl": ".",
+		"paths": {
+			"src/*": [
+				"src/*"
+			]
+		}
+	}
+}
