@@ -36,7 +36,7 @@ export default class VideoPlayer {
 		this.videoScript["x5-video-player-type"] = "h5";
 
 		// 是否使用blob方式加载视频
-		if (opts.useBlob) {
+		if (opts.useBlob && typeof fetch !== 'undefined') {
 			this.loadVideoBlob(src)
 				.then((res: string) => this.videoScript.src = res)
 				.catch((err: any) => {

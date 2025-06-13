@@ -196,7 +196,7 @@ export default class VideoPlayer {
 		gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, 1);
 	}
 	public updateTexture(dom: HTMLVideoElement) {
-		const _el = this._testSupportVideo(dom) || dom;
+		// const _el = this._testSupportVideo(dom) || dom;
 		const { gl } = this;
 		const level = 0;
 		const internalFormat = gl.RGBA;
